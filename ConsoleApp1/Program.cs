@@ -6,27 +6,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int i;
-            for(i=0;i<=100;i++)
-            {  
-                Console.Write( " "+i);
-                int j;
-                j = i % 10;
-               if(j==0)
-                {
-                    Console.WriteLine();
-                }
-            }
-         /*       1到100打印                           */
-            for(int a=0;a<100;a+=10)
+            /*0~10打印*/
+            for (int i = 0; i <= 10; i++)
             {
-                for(int b=a;b<a+10;b++)
-                {
-                    Console.Write(" " + b);
-
-                }
-                Console.WriteLine();
+                Console.WriteLine(i);
             }
-         }
+            for (int i = 10; i > 0; i--)
+            { Console.Write(i); }
+            // Console.ReadLine();
+        }
+    }
     }
 }
