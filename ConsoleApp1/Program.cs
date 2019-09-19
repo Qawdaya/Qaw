@@ -17,7 +17,7 @@ namespace ConsoleApp1
                     Console.WriteLine();
                 }
             }
-         /*                                  */
+         /*       1到100打印                           */
             for(int a=0;a<100;a+=10)
             {
                 for(int b=a;b<a+10;b++)
