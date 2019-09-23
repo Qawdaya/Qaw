@@ -2,55 +2,41 @@
 
 namespace ConsoleApp1
 {
+    public enum TimeofDay
+    {
+        morning=0,
+            afternoon=1,
+            evening=2
+    }
     class Program
     {
         
         static void Main(string[] args)
         {
-           // Random rd = new Random();
-            int i;
-            // i = rd.Next();
-            i = 2;
-            switch (i)
+           /*获取枚举字符串*/
+            TimeofDay time = TimeofDay.morning;
+            Console.WriteLine(time.ToString());
+            /*枚举传递值*/
+            WriteGreeting(TimeofDay.morning);
+            /*字符串中获取枚举值*/
+            TimeofDay time2 = (TimeofDay)Enum.Parse(typeof(TimeofDay), "morning", true);
+            Console.WriteLine((int)time2);
+        }
+        static void WriteGreeting(TimeofDay timeofDay)
+        {
+            switch(timeofDay)
             {
-                case 1:
-                    Console.WriteLine("i=1");
+                case TimeofDay.morning:
+                    Console.WriteLine("Good morning!");
                     break;
-                case 2:
-                    Console.WriteLine("i=2");
+                case TimeofDay.afternoon:
+                    Console.WriteLine("Good afternoon!");
                     break;
-                case 3:
-                    Console.WriteLine("i=3");
-                    break;
-                case 4:
-                    Console.WriteLine("i=4");
+                case TimeofDay.evening:
+                    Console.WriteLine("Good evening!");
                     break;
                 default:
-                    Console.WriteLine("i is not 1,2,3 or 4");
-                    break;
-            }
-            string country = "us";
-            switch (country)
-            {
-                case "America":
-                    goto case "Britain";
-                   
-                case "Britain":
-                   Console.WriteLine(" language = English");
-                    break;
-
-
-            }
-            switch (country)
-            {
-                case "au":
-                case "uk":
-                case "us":
-                    Console.WriteLine("language=English");
-                    break;
-                case "at":
-                case "de":
-                    Console.WriteLine("language=Geman");
+                    Console.WriteLine("Hello!");
                     break;
             }
         }
