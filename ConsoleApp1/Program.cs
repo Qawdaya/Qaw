@@ -1,4 +1,13 @@
-﻿using System;
+﻿#define ENTERPRISE
+#define W2K
+#if ENTERPEISE
+#if W2K
+#endif
+#elif PROFESSIONAL
+#else
+#endif
+
+using System;
 
 namespace ConsoleApp1
 {
@@ -6,15 +15,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int i = 10;
-            int j = 20;
-            Console.WriteLine("{0} plus {1} equal {2}",i,j,i+j);
-            Console.WriteLine("{0,4} plus {1,4} equal {2,4}", i, j, i + j);
-            Console.WriteLine("\n{0,10}\n plus {1,4}\n ------------\nequal {2,4}", i, j, i + j);
+#if Dragon
+             Console.WriteLine("Dragon is defined");
+#else
+            Console.WriteLine("Dragon is not defined");
+ #endif
+            Console.ReadKey();
 
-            double A = 0.234;
-            Console.WriteLine("{0:#.00}",A);
-
+           
         }
       
        
