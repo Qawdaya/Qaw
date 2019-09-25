@@ -4,29 +4,36 @@ namespace Chapter_3
 {
     class Program
     {
+       
         static void Main(string[] args)
         {
-            PhoneCustomer myCustomer = new PhoneCustomer();//类声明
-            PhoneCustomerStruct myCustomer2 = new PhoneCustomerStruct();//结构声明
-            myCustomer.FirstName = "Simon";//实例化对象，可直接使用Object.FieldName来访问
-            myCustomer2.FirstName = "Sara";
-            Console.WriteLine("{0}\n{1} ", myCustomer.FirstName,myCustomer2.FirstName);
+            Console.WriteLine("Pi is " + MathTest.GetPi());
+            int x = MathTest.GetSquareOf(5);
+            Console.WriteLine("Square of 5 is" + x);
+            MathTest math = new MathTest();
+            math.value = 30;
+            Console.WriteLine("Value fild of math variable contains" + math.value);
+            Console.WriteLine("Square of 30 is" +math.GetSquare());
         }
     }
-    class  PhoneCustomer  //类（储存在堆上）
+    class MathTest
     {
-        public const string DayOfSendingBill = "Monday";
-        public int CustomerID;
-        public string FirstName;
-        public string LastName;
+        public int value;
+        public int GetSquare()
+        {
+            return value * value;
+        }
+        public static int GetSquareOf(int x)
+        {
+            return x * x;
 
+        }
+        public static double GetPi()
+        {
+            return 3.14159;
+        }
     }
+   
 
-    struct PhoneCustomerStruct  //结构（储存在栈上）
-    {
-        public const string DayOfSendingBill = "Monday";
-        public int CustomerID;
-        public string FirstName;
-        public string LastName;
-    }
+    
 }
