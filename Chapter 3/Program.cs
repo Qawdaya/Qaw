@@ -4,7 +4,7 @@ namespace Chapter_3
 {
     class Program
     {
-       static void SomeFunction(int[]ints,int i)
+       static void SomeFunction(int[]ints,ref int i)
         {
             ints[0] = 100;
             i = 100;
@@ -16,7 +16,7 @@ namespace Chapter_3
             Console.WriteLine("i=" + i);
             Console.WriteLine("ints[0]="+ints[0]);
             Console.WriteLine("Calling SomeFuction.");
-            SomeFunction(ints, i);
+            SomeFunction(ints, ref i);
             Console.WriteLine("i=" + i);
             Console.WriteLine("ints[0]=" + ints[0]);
             
