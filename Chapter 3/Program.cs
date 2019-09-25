@@ -4,36 +4,27 @@ namespace Chapter_3
 {
     class Program
     {
-       
+       static void SomeFunction(int[]ints,int i)
+        {
+            ints[0] = 100;
+            i = 100;
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Pi is " + MathTest.GetPi());
-            int x = MathTest.GetSquareOf(5);
-            Console.WriteLine("Square of 5 is" + x);
-            MathTest math = new MathTest();
-            math.value = 30;
-            Console.WriteLine("Value fild of math variable contains" + math.value);
-            Console.WriteLine("Square of 30 is" +math.GetSquare());
+            int i = 0;
+            int[] ints = { 0, 1, 2, 4, 8 };
+            Console.WriteLine("i=" + i);
+            Console.WriteLine("ints[0]="+ints[0]);
+            Console.WriteLine("Calling SomeFuction.");
+            SomeFunction(ints, i);
+            Console.WriteLine("i=" + i);
+            Console.WriteLine("ints[0]=" + ints[0]);
+            
         }
     }
-    class MathTest
-    {
-        public int value;
-        public int GetSquare()
-        {
-            return value * value;
-        }
-        public static int GetSquareOf(int x)
-        {
-            return x * x;
-
-        }
-        public static double GetPi()
-        {
-            return 3.14159;
-        }
-    }
+    
+  }
    
 
     
-}
+
