@@ -1,12 +1,5 @@
 ﻿#define ENTERPRISE
 #define W2K
-#if ENTERPEISE
-#if W2K
-#endif
-#elif PROFESSIONAL
-#else
-#endif
-
 using System;
 
 namespace ConsoleApp1
@@ -22,10 +15,17 @@ namespace ConsoleApp1
  #endif
             Console.ReadKey();
 
-           
+#if ENTERPEISE
+#if W2K
+#endif
+#elif PROFESSIONAL
+#else
+#endif
+
+
         }
-      
-       
+
+
 
     }
 }
