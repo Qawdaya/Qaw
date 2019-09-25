@@ -4,19 +4,16 @@ namespace Chapter_3
 {
     class Program
     {
-       static void SomeFunction(out int i)
-        {
-            i = 100;
-
-        }
+      
         static void Main(string[] args)
         {
-            int i = 0;
+            string Fullname(string firstname,string lastname)
+        {
+            return firstname + " " + lastname;
+        }
+           Console.WriteLine( Fullname("John", "Doe"));
+            Console.WriteLine( Fullname(lastname: "Doe", firstname: "John"));
           
-            SomeFunction(out i);
-           
-            Console.WriteLine(i);
-            
         }
     }
     
