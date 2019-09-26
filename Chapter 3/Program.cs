@@ -10,26 +10,26 @@ namespace runoob
   
 
         // 声明类型为 string 的 Name 属性
-        public string Name  //只读
+        public string Name  //只写
         {
-            get
+            /*  get
             {
                 return name;
-            }
-         /*  set
+            }*/
+         set
             {
                 name = value;
-            }*/
+            }
         }
 
         // 声明类型为 int 的 Age 属性
-        public int Age //只读
+        public int Age //只写
         {
-            get
+             /*get
             {
                 return age;
-            }
-           /* set
+            }*/
+           set
             {
                 if(age<0)
                 {
@@ -37,13 +37,13 @@ namespace runoob
                 }
                 else
                 age = value;
-            }*/
+            }
         }
         //重写了object类的ToString()方法
-        public override string ToString()  
+      /*  public override string ToString()  
         {
             return  " Name = " + Name + ", Age = " + Age;
-        }
+        }*/
     }
     class ExampleDemo
     {
@@ -53,11 +53,11 @@ namespace runoob
             Student s = new Student();
 
             // 设置 student 的 name 和 age
-           // s.Name = "Zara";
-           // s.Age = 9;
+            s.Name = "Zara";
+           s.Age = 9;
             Console.WriteLine("Student Info: {0}", s);
             // 增加年龄
-           // s.Age += 1;
+          // s.Age += 1;
             Console.WriteLine("Student Info: {0}", s);
             Console.ReadKey();
         }
