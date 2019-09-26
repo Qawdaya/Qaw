@@ -2,29 +2,37 @@
 using System.Drawing;
 namespace Chapter_3
 {
-   public class Userpreferences
+
+    class PersonSta
     {
-        public static readonly Color BlackColor;
-        static Userpreferences()
+        private static string name;//静态字段
+        public static string Name //静态属性
         {
-            DateTime now = DateTime.Now;
-            if (now.DayOfWeek == DayOfWeek.Saturday || now.DayOfWeek == DayOfWeek.Sunday)
-                BlackColor = Color.Green;
-            else
-                BlackColor = Color.Red;
+            get
+            {
+                return name;
+            }
+        }
+        static PersonSta() //静态构造函数，仅执行一次
+        {
+            Console.WriteLine("静态构造函数被调用了");
+
+
+          name = "keep moving";
+            
+            Console.WriteLine("静态构造函数被调用了2");
+
         }
 
     }
-     
-        
+
     class Program
     {
        static void Main(string[] args)
         {
-
-            Console.WriteLine("user_preferences:blackcolor is:"+Userpreferences.BlackColor.ToString());
-         
+            Console.WriteLine(PersonSta.Name);
            
+            Console.WriteLine(PersonSta.Name);
         }
 
     }
