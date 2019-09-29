@@ -4,8 +4,8 @@ namespace Chapter_3
 {
     class dimensions1    //类类型
     {
-        public double length1;
-        public double width1;
+        public double length1=9;
+        public double width1=8;
         public double diagona1
         {
             get { return length1 * length1 + width1 * width1; }
@@ -14,12 +14,12 @@ namespace Chapter_3
     }
     struct dimensions2  //结构
     {
-        public double length2;
-        public double width2;
+        public double length2;//当赋值，则报错
+       public double width2;//当赋值，则报错
         public  dimensions2(double length,double width)
         {
-            length2 = length;
-            width2 = width;
+           length2 = length;   
+           width2 = width;
         }
         public double diagona1
         {
@@ -34,8 +34,8 @@ namespace Chapter_3
         {
             dimensions2 point;
             point.length2 = 2;
-            point.width2 = 4;
-            Console.WriteLine(point.diagona1.ToString()); //结构调用1
+           point.width2 = 4;
+           Console.WriteLine(point.diagona1.ToString()); //结构调用1
             dimensions2 d = new dimensions2();
             d.length2 = 3;
             d.width2 = 5;
