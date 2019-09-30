@@ -2,14 +2,24 @@
 
 namespace Chapter_3
 {
-    class dimensions1    //类类型
+    public class monkey
     {
-        public double length1=9;
-        public double width1=8;
-        public double diagona1
+        private decimal amount;
+        public decimal Amount
         {
-            get { return length1 * length1 + width1 * width1; }
-
+            get
+            {
+                return amount;
+            }
+            set
+            {
+                amount = value;
+            }
+           
+        }
+        public override string ToString()
+        {
+            return "$"+Amount.ToString();
         }
     }
   
@@ -18,20 +28,14 @@ namespace Chapter_3
    
         static void Main(string[] args)
         {
-            dimensions1 d = new dimensions1();
-            WeakReference m = new WeakReference(new dimensions1());
-            dimensions1 length;
-            if(m.IsAlive)
-            {
-                length = m.Target as dimensions1;
-                Console.WriteLine("没被回收，直接引用原对象");
-            }
-            else
-            {
-                length = new dimensions1();
-            }
+            monkey cash1 = new monkey();
+            cash1.Amount = 40M;
+            Console.WriteLine("cash1.tostring() returns:" + cash1.ToString());
+            Console.ReadLine();
+
 
         }
+
     }
 
 }
