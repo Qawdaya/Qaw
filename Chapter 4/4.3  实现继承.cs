@@ -2,43 +2,37 @@
 
 namespace Chapter_4
 {
-    class mydrivedClass
+   class MyDrivedClass:MyBaseClass
     {
-        public void setn(int i)
+        public override string VirtualMethod()
         {
-            c = i;
-            
-        }
-      public interface setn2
-        {
-            int getnu2(int a);
-        }
-    
-        protected int c;
-      
-    }
-    
-    class my:mydrivedClass
-        {
-        public int Getnut()
-        {
-            return (c*c);
-        }
-        public int getnut2(int a)
-        {
-            return (a + 2);
+            return VirtualMethod();
         }
     }
+    class MyBaseClass
+    {
+        public virtual string VirtualMethod()
+        {
+            return "This method is virtual and defind in MyBaseClass";
+        }
+        public virtual string foreName
+        {
+            get { return ForeName; }
+            set { ForeName = value; }
+        }
+        private string ForeName;
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            my m = new my();
-            int f;
-            m.setn(3);
-            f = m.Getnut();
-            Console.WriteLine(m.Getnut());
-            Console.WriteLine(m.getnut2(f));
+            MyDrivedClass myDrivedClass = new MyDrivedClass();
+           // MyBaseClass myBase = new MyBaseClass();
+            myDrivedClass.foreName = "DDD";
+            Console.WriteLine(myDrivedClass.foreName.ToString());
+           // Console.WriteLine(myBase);
+         
         }
     }
 }
