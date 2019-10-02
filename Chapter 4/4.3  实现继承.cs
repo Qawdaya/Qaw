@@ -6,6 +6,7 @@ namespace Chapter_4
     {
         public virtual decimal Calculateprice()
         {
+            Console.WriteLine("test1");
             return 0.0M;
         }
     }
@@ -13,7 +14,7 @@ namespace Chapter_4
     {
         public override decimal Calculateprice()
         {
-           // Console.WriteLine("test");
+            Console.WriteLine("test");
             return base.Calculateprice() * 0.9M;
 
         }
@@ -25,6 +26,9 @@ namespace Chapter_4
     {
         static void Main(string[] args)
         {
+            GoldAccount a=new GoldAccount();
+            a.Calculateprice();
+            Console.ReadKey();
            
         }
     }
