@@ -2,32 +2,27 @@
 
 namespace Chapter_4
 {
-    class CustomerAccount
-    {
-        public virtual decimal Calculateprice()
-        {
-            Console.WriteLine("test1");
-            return 0.0M;
-        }
+    public abstract  class test
+    {          
+        public abstract void TEST();
     }
-    class GoldAccount:CustomerAccount
+   
+  public  class GoldAccount:test
     {
-        public override decimal Calculateprice()
+        public override void TEST()
         {
             Console.WriteLine("test");
-            return base.Calculateprice() * 0.9M;
-
         }
       
     }
-
-
     class Program
     {
         static void Main(string[] args)
         {
-            GoldAccount a=new GoldAccount();
-            a.Calculateprice();
+
+            GoldAccount G = new GoldAccount();
+            test T = G;
+            T.TEST();
             Console.ReadKey();
            
         }
