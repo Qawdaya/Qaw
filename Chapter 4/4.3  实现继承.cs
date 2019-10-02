@@ -2,37 +2,30 @@
 
 namespace Chapter_4
 {
-   class MyDrivedClass:MyBaseClass
+    class CustomerAccount
     {
-        public override string VirtualMethod()
+        public virtual decimal Calculateprice()
         {
-            return VirtualMethod();
+            return 0.0M;
         }
     }
-    class MyBaseClass
+    class GoldAccount:CustomerAccount
     {
-        public virtual string VirtualMethod()
+        public override decimal Calculateprice()
         {
-            return "This method is virtual and defind in MyBaseClass";
+           // Console.WriteLine("test");
+            return base.Calculateprice() * 0.9M;
+
         }
-        public virtual string foreName
-        {
-            get { return ForeName; }
-            set { ForeName = value; }
-        }
-        private string ForeName;
+      
     }
+
 
     class Program
     {
         static void Main(string[] args)
         {
-            MyDrivedClass myDrivedClass = new MyDrivedClass();
-           // MyBaseClass myBase = new MyBaseClass();
-            myDrivedClass.foreName = "DDD";
-            Console.WriteLine(myDrivedClass.foreName.ToString());
-           // Console.WriteLine(myBase);
-         
+           
         }
     }
 }
