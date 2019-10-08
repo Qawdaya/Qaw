@@ -6,25 +6,39 @@ namespace Chapter_4
     public abstract class genericcustmer
     {
         private string name;
-        public genericcustmer()
-            :base()      //可以省略
+        public genericcustmer(string name)
         {
-            name = "<no name>";
+            this.name=name;
         }
 
     }
     class neverore60custmer:genericcustmer
     {
-        private int highcostminutesused;
-    }
+        private uint highcostminutesused;
+        public neverore60custmer(string name):base(name)
+        {
+            Console.WriteLine(name);
+        }
+        
+        public neverore60custmer(string name,string referername):base(name)
+        {
+            this.referername = referername;
+           
+        }
+        private string referername;
+      
+      
+    } 
+
 
     class Program
     {
         static void Main(string[] args)
         {
 
-          
+          genericcustmer genericcustmer= new neverore60custmer("Arabel");
 
+            Console.ReadKey();
            
         }
     }
