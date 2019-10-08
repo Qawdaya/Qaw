@@ -33,7 +33,7 @@ namespace Chapter_4
 
     class Program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
 
           genericcustmer genericcustmer= new neverore60custmer("Arabel");
