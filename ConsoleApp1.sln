@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter 3", "Chapter 3\Chap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter 4", "Chapter 4\Chapter 4.csproj", "{9C1E90A1-DDCC-475E-88C5-08EE3F6479E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 5", "Chapter 5\Chapter 5.csproj", "{B01A290A-6DB3-469E-8D43-AC4DE040A9BC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 5", "Chapter 5", "{1AFDBDD7-1E5A-4943-8A83-9C8275D2D01D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3  泛型类的功能", "5.3  泛型类的功能\5.3  泛型类的功能.csproj", "{53051813-42F4-4F86-BED9-07CAFB7679A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,13 +31,16 @@ Global
 		{9C1E90A1-DDCC-475E-88C5-08EE3F6479E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1E90A1-DDCC-475E-88C5-08EE3F6479E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1E90A1-DDCC-475E-88C5-08EE3F6479E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B01A290A-6DB3-469E-8D43-AC4DE040A9BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B01A290A-6DB3-469E-8D43-AC4DE040A9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B01A290A-6DB3-469E-8D43-AC4DE040A9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B01A290A-6DB3-469E-8D43-AC4DE040A9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53051813-42F4-4F86-BED9-07CAFB7679A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53051813-42F4-4F86-BED9-07CAFB7679A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53051813-42F4-4F86-BED9-07CAFB7679A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53051813-42F4-4F86-BED9-07CAFB7679A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53051813-42F4-4F86-BED9-07CAFB7679A5} = {1AFDBDD7-1E5A-4943-8A83-9C8275D2D01D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
