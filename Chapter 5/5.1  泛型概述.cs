@@ -13,7 +13,7 @@ namespace Chapter_5
     
     class Program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
 
             var list = new List<int>();
