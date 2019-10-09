@@ -16,8 +16,9 @@ namespace _5._6__泛型方法
                    new Account("Matthias",2400)
             };
             decimal amount = Algorithm.AccumulateSimple(accounts);
-            amount = Algorithm.Accumulate(accounts);
+             amount = Algorithm.Accumulate(accounts);
             amount = Algorithm.Accumulate<Account, decimal>(accounts, (item, sum) => sum += item.Balance);
+            Console.ReadKey();
 
         }
            
