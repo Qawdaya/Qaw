@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace _5._6__泛型方法
 {
    
@@ -16,6 +16,9 @@ namespace _5._6__泛型方法
                    new Account("Matthias",2400)
             };
             decimal amount = Algorithm.AccumulateSimple(accounts);
+            decimal amount = Algorithm.Accumulate(accounts);
+
         }
+           
     }
 }
