@@ -6,7 +6,12 @@ namespace _5._4__泛型接口
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IIndex<Rectangle> rectangle = RectangleCollection.GetRectangle();
+            IIndex<Shape> shape = rectangle;
+            for(int i=0;i<shape.Count;i++)
+            {
+                Console.WriteLine(shape[i]);
+            }
         }
     }
 }
