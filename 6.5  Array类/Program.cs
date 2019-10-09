@@ -33,5 +33,13 @@ namespace _6._5__Array类
             Person first = racers2[1, 10];
             Person last = racers2[2, 12];
         }
+        static void CopyArrays()
+        {
+            Person[] beatles =
+            {
+                new Person { FirstName = "John", LastName = "Lennon" },
+                new Person { FirstName = "Paul", LastName = "McCartney" }
+            };
+            Person[] beatlesClone = (Person[])beatles.Clone();
     }
 }
