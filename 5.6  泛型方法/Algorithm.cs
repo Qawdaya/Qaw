@@ -25,5 +25,16 @@ namespace _5._6__泛型方法
             }
             return sum;
         }
+        public static T2 Accumlate<T1, T2>(IEnumerable<T1> source,
+        Func<T1, T2, T2> action)
+        {
+            T2 sum = default(T2);
+            foreach(T1 item in source)
+            {
+                sum = action(item, sum);
+            }
+            return sum;
+        }
+
     }
 }
