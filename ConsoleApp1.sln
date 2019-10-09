@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.3  多维数组", "6.3  �
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.4  锯齿数组", "6.4  锯齿数组\6.4  锯齿数组.csproj", "{C62512E7-875E-424A-A6B6-ABCBC109A4F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.5  Array类", "6.5  Array类\6.5  Array类.csproj", "{BC4C4142-D7B7-4047-94CB-43163481922C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{C62512E7-875E-424A-A6B6-ABCBC109A4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C62512E7-875E-424A-A6B6-ABCBC109A4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C62512E7-875E-424A-A6B6-ABCBC109A4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4C4142-D7B7-4047-94CB-43163481922C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4C4142-D7B7-4047-94CB-43163481922C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4C4142-D7B7-4047-94CB-43163481922C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4C4142-D7B7-4047-94CB-43163481922C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{4E147320-49AF-4583-9BDB-EB3AC97A710D} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 		{DF66E2AC-33E6-4332-BA6B-B5E8F5525232} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 		{C62512E7-875E-424A-A6B6-ABCBC109A4F3} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
+		{BC4C4142-D7B7-4047-94CB-43163481922C} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
