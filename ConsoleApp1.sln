@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.5  泛型结构", "5.5  �
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.6  泛型方法", "5.6  泛型方法\5.6  泛型方法.csproj", "{F84D8A2E-13C5-4C68-83D5-A7CA9C35F934}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.6.4  泛型方法规范", "5.6.4  泛型方法规范\5.6.4  泛型方法规范.csproj", "{3CA55EAF-A292-4FD4-B77E-F93C97B6E050}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{F84D8A2E-13C5-4C68-83D5-A7CA9C35F934}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F84D8A2E-13C5-4C68-83D5-A7CA9C35F934}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F84D8A2E-13C5-4C68-83D5-A7CA9C35F934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA55EAF-A292-4FD4-B77E-F93C97B6E050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA55EAF-A292-4FD4-B77E-F93C97B6E050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA55EAF-A292-4FD4-B77E-F93C97B6E050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA55EAF-A292-4FD4-B77E-F93C97B6E050}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{2C691396-26BD-4195-8FB2-492ABCAF07D1} = {1AFDBDD7-1E5A-4943-8A83-9C8275D2D01D}
 		{1A4A843B-A72A-42CF-8EB3-4D54FD9FC8B3} = {1AFDBDD7-1E5A-4943-8A83-9C8275D2D01D}
 		{F84D8A2E-13C5-4C68-83D5-A7CA9C35F934} = {1AFDBDD7-1E5A-4943-8A83-9C8275D2D01D}
+		{3CA55EAF-A292-4FD4-B77E-F93C97B6E050} = {1AFDBDD7-1E5A-4943-8A83-9C8275D2D01D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
