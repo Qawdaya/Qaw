@@ -33,13 +33,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.2  简单数组", "6.2  �
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.3  多维数组", "6.3  多维数组\6.3  多维数组.csproj", "{DF66E2AC-33E6-4332-BA6B-B5E8F5525232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.4  锯齿数组", "6.4  锯齿数组\6.4  锯齿数组.csproj", "{C62512E7-875E-424A-A6B6-ABCBC109A4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.4  锯齿数组", "6.4  锯齿数组\6.4  锯齿数组.csproj", "{C62512E7-875E-424A-A6B6-ABCBC109A4F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.5  Array类", "6.5  Array类\6.5  Array类.csproj", "{BC4C4142-D7B7-4047-94CB-43163481922C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.5  Array类", "6.5  Array类\6.5  Array类.csproj", "{BC4C4142-D7B7-4047-94CB-43163481922C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.5.3  排序", "6.5.3  排序\6.5.3  排序.csproj", "{CA466FF8-58A5-4229-A9AD-ED515B28C801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.5.3  排序", "6.5.3  排序\6.5.3  排序.csproj", "{CA466FF8-58A5-4229-A9AD-ED515B28C801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.6  数组作为参数", "6.6  数组作为参数\6.6  数组作为参数.csproj", "{6F94D447-3FB5-46B8-BACC-EC0E12484B0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.6  数组作为参数", "6.6  数组作为参数\6.6  数组作为参数.csproj", "{6F94D447-3FB5-46B8-BACC-EC0E12484B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.7  枚举", "6.7  枚举\6.7  枚举.csproj", "{4EFEDAD8-E35F-4A70-9B02-D56E34A75E39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{6F94D447-3FB5-46B8-BACC-EC0E12484B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F94D447-3FB5-46B8-BACC-EC0E12484B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F94D447-3FB5-46B8-BACC-EC0E12484B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFEDAD8-E35F-4A70-9B02-D56E34A75E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFEDAD8-E35F-4A70-9B02-D56E34A75E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFEDAD8-E35F-4A70-9B02-D56E34A75E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFEDAD8-E35F-4A70-9B02-D56E34A75E39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{BC4C4142-D7B7-4047-94CB-43163481922C} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 		{CA466FF8-58A5-4229-A9AD-ED515B28C801} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 		{6F94D447-3FB5-46B8-BACC-EC0E12484B0B} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
+		{4EFEDAD8-E35F-4A70-9B02-D56E34A75E39} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
