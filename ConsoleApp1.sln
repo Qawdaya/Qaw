@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3  类型的安全性", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.4  比较对象的相等性", "7.4  比较对象的相等性\7.4  比较对象的相等性.csproj", "{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.5  运算符重载", "7.5  运算符重载\7.5  运算符重载.csproj", "{7C5065FD-4215-41D4-A294-151C230F67DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5065FD-4215-41D4-A294-151C230F67DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5065FD-4215-41D4-A294-151C230F67DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5065FD-4215-41D4-A294-151C230F67DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5065FD-4215-41D4-A294-151C230F67DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +172,7 @@ Global
 		{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 		{D0682088-48BB-4A42-9318-EED5FBF54FCE} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 		{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
+		{7C5065FD-4215-41D4-A294-151C230F67DC} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
