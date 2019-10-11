@@ -52,6 +52,17 @@ namespace _7._3__类型的安全性
             string s3 = "100";
             int i3 = int.Parse(s3);
             Console.WriteLine(i3 + 50);
+
+            int myIntNumber = 20;
+            object myobject = myIntNumber;
+            int mySecondNumber = (int)myobject;
+            Console.WriteLine(mySecondNumber);
+
+            /* long mylongNumber = 333333423;
+             object myObject = (object)mylongNumber;
+             int myIntNumber = (int)myObject;*/     //拆箱时要非常小心，确保得到的值变量有足够的
+                                                    //空间储存拆箱中的值中的所有字节
+
         }
     }
 }
