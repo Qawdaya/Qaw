@@ -56,11 +56,12 @@ namespace _7._2__运算符
 
             int? u = null;
             int d;
-            d = a ?? 10;
+            d = u?? 10;
             Console.WriteLine(d);
-            a = 3;
-            d = a ?? 10;
+            u = 3;
+            d = u ?? 10;
             Console.WriteLine(d);
+
         }
     }
 }
