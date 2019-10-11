@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 7", "Chapter 7", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2  运算符", "7.2  运算符\7.2  运算符.csproj", "{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3  类型的安全性", "7.3  类型的安全性\7.3  类型的安全性.csproj", "{D0682088-48BB-4A42-9318-EED5FBF54FCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0682088-48BB-4A42-9318-EED5FBF54FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0682088-48BB-4A42-9318-EED5FBF54FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0682088-48BB-4A42-9318-EED5FBF54FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0682088-48BB-4A42-9318-EED5FBF54FCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +158,7 @@ Global
 		{0AE679E1-D129-441E-9931-92502CD7F63A} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 		{6888B0A0-4755-4FD8-B6A7-15B85A035466} = {A62D90CB-210C-4E4D-AC26-8E636CDD75A2}
 		{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
+		{D0682088-48BB-4A42-9318-EED5FBF54FCE} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
