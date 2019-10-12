@@ -45,8 +45,11 @@ namespace _8._2__委托
 
     }
     class Program
+
     {
+     
         private delegate string GetAString();
+       
         static void Main(string[] args)
         {
             int x = 40;
@@ -57,6 +60,8 @@ namespace _8._2__委托
             Console.WriteLine("string is {0}", firststringMethod());
             firststringMethod = new GetAString(Currency.GetCurrencyUnit);
             Console.WriteLine("String is {0}", firststringMethod());
+          
+
         }
     }
 }

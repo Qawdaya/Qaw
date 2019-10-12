@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>_8._2._4__Action_T_和Func_T_委托</RootNamespace>
+  </PropertyGroup>
+
+</Project>
