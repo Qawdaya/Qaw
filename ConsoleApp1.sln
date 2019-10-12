@@ -49,15 +49,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.9  结构比较", "6.9  �
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 7", "Chapter 7", "{E94232F1-5227-4CD2-A655-E23A7E18F2A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2  运算符", "7.2  运算符\7.2  运算符.csproj", "{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2  运算符", "7.2  运算符\7.2  运算符.csproj", "{3413DA3D-1F7C-4FE4-A61E-2248C0907A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3  类型的安全性", "7.3  类型的安全性\7.3  类型的安全性.csproj", "{D0682088-48BB-4A42-9318-EED5FBF54FCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3  类型的安全性", "7.3  类型的安全性\7.3  类型的安全性.csproj", "{D0682088-48BB-4A42-9318-EED5FBF54FCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.4  比较对象的相等性", "7.4  比较对象的相等性\7.4  比较对象的相等性.csproj", "{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.4  比较对象的相等性", "7.4  比较对象的相等性\7.4  比较对象的相等性.csproj", "{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.5  运算符重载", "7.5  运算符重载\7.5  运算符重载.csproj", "{7C5065FD-4215-41D4-A294-151C230F67DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.5  运算符重载", "7.5  运算符重载\7.5  运算符重载.csproj", "{7C5065FD-4215-41D4-A294-151C230F67DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.6  用户定义的类型强制转换", "7.6  用户定义的类型强制转换\7.6  用户定义的类型强制转换.csproj", "{04A0AC04-B64C-4926-9C51-1731A5E6C551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.6  用户定义的类型强制转换", "7.6  用户定义的类型强制转换\7.6  用户定义的类型强制转换.csproj", "{04A0AC04-B64C-4926-9C51-1731A5E6C551}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 8", "Chapter 8", "{3BABFDD6-9279-431E-AE9D-315A3B8FB119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2  委托", "8.2  委托\8.2  委托.csproj", "{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +157,10 @@ Global
 		{04A0AC04-B64C-4926-9C51-1731A5E6C551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04A0AC04-B64C-4926-9C51-1731A5E6C551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04A0AC04-B64C-4926-9C51-1731A5E6C551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,6 +188,7 @@ Global
 		{029F5477-0D8D-45CA-BCDC-ADCFB4067CA8} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 		{7C5065FD-4215-41D4-A294-151C230F67DC} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 		{04A0AC04-B64C-4926-9C51-1731A5E6C551} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
+		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E} = {3BABFDD6-9279-431E-AE9D-315A3B8FB119}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
