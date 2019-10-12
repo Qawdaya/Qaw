@@ -61,7 +61,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.6  用户定义的类型�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 8", "Chapter 8", "{3BABFDD6-9279-431E-AE9D-315A3B8FB119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2  委托", "8.2  委托\8.2  委托.csproj", "{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2  委托", "8.2  委托\8.2  委托.csproj", "{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.2.3  简单的委托示例", "ConsoleApp2\8.2.3  简单的委托示例.csproj", "{4FA384ED-3E7D-406E-9EB9-DDA63D5311DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,6 +163,10 @@ Global
 		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA384ED-3E7D-406E-9EB9-DDA63D5311DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA384ED-3E7D-406E-9EB9-DDA63D5311DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA384ED-3E7D-406E-9EB9-DDA63D5311DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA384ED-3E7D-406E-9EB9-DDA63D5311DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +195,7 @@ Global
 		{7C5065FD-4215-41D4-A294-151C230F67DC} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 		{04A0AC04-B64C-4926-9C51-1731A5E6C551} = {E94232F1-5227-4CD2-A655-E23A7E18F2A2}
 		{A6F092B4-7CC9-4F18-BCBE-24846EB6690E} = {3BABFDD6-9279-431E-AE9D-315A3B8FB119}
+		{4FA384ED-3E7D-406E-9EB9-DDA63D5311DF} = {3BABFDD6-9279-431E-AE9D-315A3B8FB119}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
