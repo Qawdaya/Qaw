@@ -14,7 +14,7 @@ namespace _8._4__事件
     }
     public  class CarDealer
     {
-        public event EventHandler<CarInfoEventArgs> newCarInfo;
+        public event EventHandler<CarInfoEventArgs> NewCarInfo;
         public void NewCar(string car)
         {
             Console.WriteLine("CarDealer,new car{0}", car);
@@ -22,7 +22,7 @@ namespace _8._4__事件
         }
         protected virtual void RaiseNewCarInfo(string car)
         {
-            EventHandler<CarInfoEventArgs> newCarInfo = newCarInfo;
+            EventHandler<CarInfoEventArgs> newCarInfo = NewCarInfo;
         if(newCarInfo!=null)
             {
                 newCarInfo(this, new CarInfoEventArgs(car));
