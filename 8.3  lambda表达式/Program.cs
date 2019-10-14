@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _8._3__lambda表达式
 {
@@ -6,22 +7,18 @@ namespace _8._3__lambda表达式
     {
         static void Main(string[] args)
         {
-            string mid = ",middle part,";
-            Func<string, string> lambda = param =>
-                {
-                    param += mid;
-                    param += "and this was added to the string,";
-                    return param;
-                };
-            Console.WriteLine(lambda("Start of string"));
-            Func<string, string> onParam = s =>
-                string.Format("change uppercase {0}", s.ToUpper());
-            Console.WriteLine(onParam("test"));
-            Func<double, double, double> twoParams = (x, y) => x * y;
-            Console.WriteLine(twoParams(3, 2));
-            Func<double, double, double> Twoparamwithtypes = (double x, double y) => x * y;
-            Console.WriteLine(Twoparamwithtypes(4, 2));
-            Console.ReadKey();
+            var values = new List<int>() { 10, 20, 30 };
+            var funcs = new List<Func<int>>();
+            foreach(var val in values)
+            {
+                var v = val;
+                funcs.Add(() => v);
+
+            }
+            foreach(var f in funcs)
+            {
+                Console.WriteLine((f()));
+            }
         }
     }
 }
