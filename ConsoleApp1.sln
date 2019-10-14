@@ -77,6 +77,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.4  事件", "8.4  事件\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.4.3  弱事件", "8.4.3  弱事件\8.4.3  弱事件.csproj", "{BCC45F96-817C-43A1-9214-1FD3E32025F1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 9", "Chapter 9", "{57F253E6-9330-4916-853E-7BC2451F44FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.1  System.String类", "9.1  System.String类\9.1  System.String类.csproj", "{FC1636EE-3748-495B-AE10-7C78D314443A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +207,10 @@ Global
 		{BCC45F96-817C-43A1-9214-1FD3E32025F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCC45F96-817C-43A1-9214-1FD3E32025F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCC45F96-817C-43A1-9214-1FD3E32025F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1636EE-3748-495B-AE10-7C78D314443A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1636EE-3748-495B-AE10-7C78D314443A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1636EE-3748-495B-AE10-7C78D314443A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1636EE-3748-495B-AE10-7C78D314443A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -238,6 +246,7 @@ Global
 		{7642EDF2-0CA8-4052-A502-045DFCCFBCFE} = {3BABFDD6-9279-431E-AE9D-315A3B8FB119}
 		{242A1D29-B184-4623-BDC0-702161CFC44A} = {3BABFDD6-9279-431E-AE9D-315A3B8FB119}
 		{BCC45F96-817C-43A1-9214-1FD3E32025F1} = {3BABFDD6-9279-431E-AE9D-315A3B8FB119}
+		{FC1636EE-3748-495B-AE10-7C78D314443A} = {57F253E6-9330-4916-853E-7BC2451F44FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08AA0AA9-85D7-49DB-A01C-63C4928E965C}
