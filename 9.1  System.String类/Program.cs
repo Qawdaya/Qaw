@@ -143,7 +143,7 @@ namespace _9._1__System.String类
 
         static void Main(string[] args)
         {
-            Vector v1 = new Vector(1, 32, 5);
+             Vector v1 = new Vector(1, 32, 5);
             Vector v2 = new Vector(845.4, 54.3, -7.8);
             Console.WriteLine("\nIn IJK format,\nv1 is {0,30:IJK}\nv2 is {1,30:IJK}", v1, v2);
             Console.WriteLine("\nIn default format,\nv1 is {0,30}\nv2 is {1,30}", v1, v2);
