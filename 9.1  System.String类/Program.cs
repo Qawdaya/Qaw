@@ -2,42 +2,154 @@
 using System.Text;
 namespace _9._1__System.String类
 {
+     struct Vector : IFormattable
+    {
+        public double x, y, z;
+
+        public Vector(double x, double y, double z)
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+
+        public string ToString(string format, IFormatProvider formatProvider)
+        {
+            if (format == null)
+                return ToString();
+            string formatUpper = format.ToUpper();
+            switch (formatUpper)
+            {
+                case "N":
+                    return "|| " + Norm() + " ||";
+                case "VE":
+                    return String.Format("( {0:E}, {1:E}, {2:E} )", x, y, z);
+                case "IJK":
+                    StringBuilder sb = new StringBuilder(x.ToString(), 30);
+                    sb.Append(" i + ");
+                    sb.Append(y.ToString());
+                    sb.Append(" j + ");
+                    sb.Append(z.ToString());
+                    sb.Append(" k");
+                    return sb.ToString();
+                default:
+                    return ToString();
+            }
+        }
+
+        public Vector(Vector rhs)
+        {
+            x = rhs.x;
+            y = rhs.y;
+            z = rhs.z;
+        }
+
+        public override string ToString()
+        {
+            return "( " + x + " , " + y + " , " + z + " )";
+        }
+
+        public double this[uint i]
+        {
+            get
+            {
+                switch (i)
+                {
+                    case 0:
+                        return x;
+                    case 1:
+                        return y;
+                    case 2:
+                        return z;
+                    default:
+                        throw new IndexOutOfRangeException(
+                           "Attempt to retrieve Vector element" + i);
+                }
+            }
+            set
+            {
+                switch (i)
+                {
+                    case 0:
+                        x = value;
+                        break;
+                    case 1:
+                        y = value;
+                        break;
+                    case 2:
+                        z = value;
+                        break;
+                    default:
+                        throw new IndexOutOfRangeException(
+                           "Attempt to set Vector element" + i);
+                }
+            }
+        }
+
+        //public static bool operator == (Vector lhs, Vector rhs)
+        //{
+        //    if (lhs.x == rhs.x && lhs.y == rhs.y && lhs.z == rhs.z)
+        //     return true;
+        //    return false;
+        //}
+
+        private const double Epsilon = 0.0000001;
+
+        public static bool operator ==(Vector lhs, Vector rhs)
+        {
+            if (Math.Abs(lhs.x - rhs.x) < Epsilon &&
+              Math.Abs(lhs.y - rhs.y) < Epsilon &&
+              Math.Abs(lhs.z - rhs.z) < Epsilon)
+                return true;
+            return false;
+        }
+
+        public static bool operator !=(Vector lhs, Vector rhs)
+        {
+            return !(lhs == rhs);
+        }
+
+        public static Vector operator +(Vector lhs, Vector rhs)
+        {
+            Vector result = new Vector(lhs);
+            result.x += rhs.x;
+            result.y += rhs.y;
+            result.z += rhs.z;
+            return result;
+        }
+
+        public static Vector operator *(double lhs, Vector rhs)
+        {
+            return new Vector(lhs * rhs.x, lhs * rhs.y, lhs * rhs.z);
+        }
+
+        public static Vector operator *(Vector lhs, double rhs)
+        {
+            return rhs * lhs;
+        }
+
+        public static double operator *(Vector lhs, Vector rhs)
+        {
+            return lhs.x * rhs.x + lhs.y + rhs.y + lhs.z * rhs.z;
+        }
+
+        public double Norm()
+        {
+            return x * x + y * y + z * z;
+        }
+    }
     class Program
     {
+
         static void Main(string[] args)
         {
-            string qreetingText = "Hello from all the guys at Wrox Press. ";
-            qreetingText += "We do hope you enjoy this book as much as we enjoyed writing it.";
-            for(int i ='z';i>='a';i--)
-            {
-                char old1 = (char)i;
-                char new1 = (char)(i + 1);
-                qreetingText = qreetingText.Replace(old1, new1);
-            }
-            for(int i='z';i>='A';i--)
-            {
-                char old1 = (char)i;
-                char new1 = (char)(i + 1);
-                qreetingText = qreetingText.Replace(old1, new1);
-            }
-            Console.WriteLine("Encided:\n" + qreetingText);
-            StringBuilder stringBuilder = new StringBuilder("Hello from all the guys at Wrox Press. ", 150);
-            stringBuilder.AppendFormat("We do hope you enjoy this book as much as we " + "enjoyed writing it");
-            Console.WriteLine("Not Encoded:\n" + stringBuilder);
-            for (int i = 'z'; i >= 'a'; i--)
-            {
-                char old1 = (char)i;
-                char new1 = (char)(i + 1);
-                stringBuilder = stringBuilder.Replace(old1, new1);
-            }
-            for (int i = 'z'; i >= 'A'; i--)
-            {
-                char old1 = (char)i;
-                char new1 = (char)(i + 1);
-                stringBuilder = stringBuilder.Replace(old1, new1);
-            }
-            Console.WriteLine("Encided:\n" + stringBuilder);
-            Console.ReadKey();
+            Vector v1 = new Vector(1, 32, 5);
+            Vector v2 = new Vector(845.4, 54.3, -7.8);
+            Console.WriteLine("\nIn IJK format,\nv1 is {0,30:IJK}\nv2 is {1,30:IJK}", v1, v2);
+            Console.WriteLine("\nIn default format,\nv1 is {0,30}\nv2 is {1,30}", v1, v2);
+            Console.WriteLine("\nIn VE format,\nv1 is {0,30:VE}\nv2 is {1,30:VE}", v1, v2);
+            Console.WriteLine("\nNorms are:\nv1 is {0,20:N}\nv2 is {1,20:N}", v1, v2);
+
         }
     }
 }
