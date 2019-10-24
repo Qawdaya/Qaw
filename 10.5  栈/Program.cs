@@ -6,8 +6,8 @@ namespace _10._5__栈
     class Program
     {
         static void Main(string[] args)
-        {
-            var alphabet = new Stack<char>();
+        { 
+             var alphabet = new Stack<char>();
             alphabet.Push('A');
             alphabet.Push('B');
             alphabet.Push('C');
