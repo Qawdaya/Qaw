@@ -7,7 +7,7 @@ namespace _10._4__队列
     {
         static void Main(string[] args)
         {
-            var dm = new DocumentManager();
+            var  dm = new DocumentManager();
             ProcessDocuments.Start(dm);
             for(int i=0;i<1000;i++)
             {
